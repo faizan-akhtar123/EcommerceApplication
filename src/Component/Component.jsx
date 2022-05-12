@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 function Component(){
     const [first, setfirst] = useState([])
     useEffect(()=>{
@@ -17,19 +18,25 @@ function Component(){
 
     return(
         <>
+        <h1 style={{textAlign:"center"}}>Shopping Cart Items</h1>
         <div className="container">
             <div className="row">
             
                 {
-                    first.map((imgitem,i)=>
+                    first.map((imgitem)=>
+
+                    
             
-                    <div className="col-md-4 mt-2 px-2" key={i}>
-                        <div className="card" style={{width: "18rem"}}>
-                            <img src={imgitem.image} alt="" className="img-fluid card-img-top" style={{height:"32rem"}} />
+                    <div className="col-md-3 mt-2 px-2"key={imgitem.id} >
+                        <div className="card" >
+                        <Link to={'imgitem/'+imgitem.id}>
+                            <img src={imgitem.image} alt="" className="img-fluid card-img-top" style={{height:"32rem"}}  />
+                        </Link>
                             
                         </div>
                         
                     </div>
+                    
                 
                     )
                 }
