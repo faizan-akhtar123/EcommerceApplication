@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import Productdetails from './Component/Productdetails';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,7 +14,7 @@ root.render(
     <Routes>
 
       <Route path='/' element={<App/>}/>
-      <Route path='imgitem/:id' element={<h1>Product page</h1>}/>
+      <Route path='product/:id' element={<Productdetails/>}/>
 
     </Routes>
     

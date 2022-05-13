@@ -23,14 +23,14 @@ function Component(){
             <div className="row">
             
                 {
-                    first.map((imgitem)=>
+                    first.map((product)=>
 
                     
             
-                    <div className="col-md-3 mt-2 px-2"key={imgitem.id} >
+                    <div className="col-md-3 mt-2 px-2"key={product.id} >
                         <div className="card" >
-                        <Link to={'imgitem/'+imgitem.id}>
-                            <img src={imgitem.image} alt="" className="img-fluid card-img-top" style={{height:"32rem"}}  />
+                        <Link to={`product/${product.id}`}>
+                            <img src={product.image} alt="" className="img-fluid card-img-top" style={{height:"32rem"}}  />
                         </Link>
                             
                         </div>
