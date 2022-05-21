@@ -22,8 +22,8 @@ function ProductComponent() {
                                 </section>
                                 <p className='mb-0 mt-1 para'>{product.title}</p>
                                 <section className="prices">
-                                    <p className='mb-0'>Price: ${product.price}</p>
-                                    <p className='mb-0'>Rating:{product.rating.rate}</p>
+                                    <p className='mb-0 para'>Price: ${product.price}</p>
+                                    <p className='mb-0 para'>Rating:{product.rating.rate}</p>
                                 </section>
 
                             </div>

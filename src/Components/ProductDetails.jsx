@@ -21,6 +21,7 @@ function ProductDetails() {
         // now we can actually come here and dispatch our action which is the remove selected product
 
     }
+    console.log("my product-detail is", product)
 
     useEffect(() => {
         if (productID && productID !== "")
